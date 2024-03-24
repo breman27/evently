@@ -9,6 +9,7 @@ import Order from "../database/models/order.model";
 import { revalidatePath } from "next/cache";
 
 export const createUser = async (userData: CreateUserParams) => {
+  console.log("Trying to connect");
   try {
     await connectToDatabase();
 
